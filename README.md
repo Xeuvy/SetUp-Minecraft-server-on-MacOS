@@ -1,26 +1,28 @@
-🚀 Project Overview
+# 🍎 macOS Minecraft Server Setup
 
-This project will help MacOS users create their own Minecraft server on their device.
-📥 Installation Features
+A simple script to set up a **PaperMC** Minecraft server on macOS with minimal configuration.
 
-    My script will install a server using the Paper core.
+## ✨ Features
 
-    Available versions: From 1.16.5 to 1.21.8.
+- **One-command installation** for PaperMC server (supports 1.16.5 - 1.21.8)
+- Automatic **Java installation & configuration** (or use your existing Java)
+- Customizable **server folder name** (changeable anytime without breaking functionality)
+- Includes **start/restart scripts** for easy management
 
-    The script can automatically install and configure the required Java version for the server.
+## 🛠️ How It Works
 
-    Alternatively, you can use your system’s Java—the script supports this option.
+The script:
+1. Creates a server folder on your Desktop (name it during setup)
+2. Downloads and configures:
+   - Selected PaperMC version
+   - Optimal Java runtime (if needed)
+3. Generates two management scripts:
+   - `StartServer.sh` - Launch your server
+   - `RestartServer.sh` - Quick restart *(currently experimental)*
 
-📂 Server Folder Setup
+## 📦 Requirements
+- macOS (Intel/Apple Silicon)
+- Basic terminal knowledge
+- ~2GB free disk space
 
-    The script creates a server folder on your desktop (you can choose its name during setup).
-
-    Renaming the folder later won’t break the server—it will still launch correctly.
-
-⚙️ Server Management
-
-Inside the server folder, you’ll find two scripts:
-
-    ▶️ StartServer.sh – Launches the server.
-
-    🔄 RestartServer.sh – Restarts the server (currently works a bit buggy, but I’ll fix it in the future!).
+> Note: The restart script is still being improved - manual restart may work better currently.
